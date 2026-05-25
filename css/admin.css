@@ -1,0 +1,129 @@
+/* ============================================
+   ADMIN DASHBOARD STYLES
+   ============================================ */
+
+.admin-body {
+    background: var(--off-white);
+}
+
+/* Login Overlay */
+.admin-login-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--deep-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.admin-login-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    max-width: 400px;
+    width: 90%;
+}
+
+.login-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border: 2px solid var(--gray-light);
+    border-radius: var(--radius-sm);
+}
+
+.login-error {
+    color: var(--danger);
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.login-hint {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--gray);
+}
+
+/* Dashboard */
+.admin-header {
+    background: var(--deep-blue);
+    color: var(--white);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.admin-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.analytics-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.analytic-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+
+.analytic-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.analytic-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+}
+
+.bookings-table-section {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.admin-table th {
+    background: var(--off-white);
+    font-weight: 600;
+    color: var(--deep-blue);
+}
+
+.table-empty, .table-loading {
+    text-align: center;
+    padding: 2rem;
+    color: var(--gray);
+}
