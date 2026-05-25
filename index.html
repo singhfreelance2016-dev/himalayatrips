@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HimalayaTrips — Premium Nepal Travel & Trekking Agency</title>
+    <meta name="description" content="Discover Nepal's most breathtaking destinations with HimalayaTrips. Premium trekking, cultural tours, and luxury travel experiences in the Himalayas.">
+    <meta name="theme-color" content="#0a1628">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preload" as="style" href="css/style.css">
+    <link rel="preload" as="style" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- ========== LOADING SPINNER ========== -->
+    <div class="spinner-wrapper" id="spinnerWrapper" aria-hidden="true">
+        <div class="spinner">
+            <div class="spinner-mountain"></div>
+            <p class="spinner-text">Discovering Nepal...</p>
+        </div>
+    </div>
+
+    <!-- ========== STICKY NAVIGATION ========== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="HimalayaTrips Home">
+                <span class="logo-icon">🏔️</span>
+                <span class="logo-text">Himalaya<span class="logo-accent">Trips</span></span>
+            </a>
+            <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                    <li><a href="#packages" class="nav-link">Packages</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#booking" class="nav-link nav-cta">Book Now</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== HERO SECTION ========== -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-badge reveal-element">✦ Premium Nepal Travel Agency ✦</span>
+                <h1 class="hero-title reveal-element">Discover the Magic of <span class="gold-text">Nepal</span></h1>
+                <p class="hero-subtitle reveal-element">
+                    Trek the mighty Himalayas, explore ancient temples, and immerse yourself in the rich culture
+                    of the roof of the world. Your unforgettable journey begins here.
+                </p>
+                <div class="hero-buttons reveal-element">
+                    <a href="#booking" class="btn btn-gold">Plan Your Adventure</a>
+                    <a href="#destinations" class="btn btn-outline">Explore Destinations</a>
+                </div>
+                <div class="hero-stats reveal-element">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5000">0</span>
+                        <span class="stat-label">Happy Travelers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Destinations</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator" aria-hidden="true">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- ========== DESTINATIONS SECTION ========== -->
+        <section class="destinations section-padding" id="destinations">
+            <div class="container">
+                <div class="section-header reveal-element">
+                    <span class="section-tag">Handpicked Destinations</span>
+                    <h2 class="section-title">Iconic <span class="gold-text">Nepal</span> Destinations</h2>
+                    <p class="section-desc">
+                        From the towering peaks of Everest to the serene lakes of Pokhara,
+                        explore the most stunning locations Nepal has to offer.
+                    </p>
+                </div>
+                <div class="destinations-grid" id="destinationsGrid">
+                    <!-- Destination cards rendered by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PACKAGES SECTION ========== -->
+        <section class="packages section-padding" id="packages">
+            <div class="container">
+                <div class="section-header reveal-element">
+                    <span class="section-tag">Tour Packages</span>
+                    <h2 class="section-title">Choose Your <span class="gold-text">Adventure</span></h2>
+                    <p class="section-desc">
+                        Carefully crafted packages for every type of traveler — from budget explorers
+                        to luxury seekers.
+                    </p>
+                </div>
+                <div class="packages-grid" id="packagesGrid">
+                    <!-- Package cards rendered by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="about-wrapper reveal-element">
+                    <div class="about-image">
+                        <div class="about-image-placeholder" aria-label="Nepalese mountain guide">
+                            <div class="about-img-icon">🏔️</div>
+                        </div>
+                        <div class="about-badge">
+                            <span>Est. 2010</span>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <span class="section-tag">About HimalayaTrips</span>
+                        <h2 class="section-title">Your Trusted <span class="gold-text">Nepal</span> Travel Partner</h2>
+                        <p class="about-text">
+                            HimalayaTrips is a Kathmandu-based travel agency with over 15 years of experience
+                            crafting unforgettable journeys across Nepal. We specialize in trekking expeditions,
+                            cultural tours, wildlife safaris, and luxury retreats — all designed to showcase
+                            the very best of the Himalayan nation.
+                        </p>
+                        <p class="about-text">
+                            Our team of local expert guides, seasoned mountaineers, and hospitality professionals
+                            ensures every trip is safe, enriching, and truly memorable. We are committed to
+                            sustainable tourism that supports local communities and preserves Nepal's natural beauty.
+                        </p>
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <span class="feature-icon">🎯</span>
+                                <span>Licensed & Insured Agency</span>
+                            </div>
+                            <div class="about-feature">
+                                <span class="feature-icon">🤝</span>
+                                <span>Local Expert Guides</span>
+                            </div>
+                            <div class="about-feature">
+                                <span class="feature-icon">🌱</span>
+                                <span>Sustainable Tourism</span>
+                            </div>
+                            <div class="about-feature">
+                                <span class="feature-icon">⭐</span>
+                                <span>5-Star Reviews</span>
+                            </div>
+                        </div>
+                        <a href="#booking" class="btn btn-gold">Start Your Journey</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== BOOKING SECTION ========== -->
+        <section class="booking section-padding" id="booking">
+            <div class="container">
+                <div class="section-header reveal-element">
+                    <span class="section-tag">Reserve Your Trip</span>
+                    <h2 class="section-title">Book Your <span class="gold-text">Adventure</span></h2>
+                    <p class="section-desc">
+                        Fill out the form below and our travel experts will get back to you within 24 hours
+                        to craft your perfect Nepal itinerary.
+                    </p>
+                </div>
+                <div class="booking-wrapper reveal-element">
+                    <form class="booking-form" id="bookingForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullName" name="full_name" placeholder="Enter your full name" required minlength="2" autocomplete="name">
+                                <span class="form-error" id="fullNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+                                <span class="form-error" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="+977 98XXXXXXXX" required minlength="7" autocomplete="tel">
+                                <span class="form-error" id="phoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="destination">Destination <span class="required">*</span></label>
+                                <select id="destination" name="destination" required>
+                                    <option value="">Select a destination</option>
+                                    <option value="Everest Base Camp">Everest Base Camp</option>
+                                    <option value="Pokhara">Pokhara</option>
+                                    <option value="Chitwan">Chitwan National Park</option>
+                                    <option value="Annapurna">Annapurna Circuit</option>
+                                    <option value="Lumbini">Lumbini</option>
+                                    <option value="Kathmandu">Kathmandu Valley</option>
+                                </select>
+                                <span class="form-error" id="destinationError"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="travelDate">Preferred Travel Date <span class="required">*</span></label>
+                                <input type="date" id="travelDate" name="travel_date" required min="">
+                                <span class="form-error" id="travelDateError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your travel preferences, group size, or any special requests..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-submit" id="submitBtn">
+                            <span class="btn-text">Send Booking Request</span>
+                            <span class="btn-spinner" id="btnSpinner" aria-hidden="true"></span>
+                        </button>
+                        <div class="form-feedback" id="formFeedback" aria-live="polite"></div>
+                    </form>
+                    <div class="booking-info">
+                        <h3>Why Book With Us?</h3>
+                        <ul class="booking-benefits">
+                            <li>
+                                <span class="benefit-icon">✅</span>
+                                <div>
+                                    <strong>Instant Confirmation</strong>
+                                    <p>Receive booking confirmation within 24 hours</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">🔒</span>
+                                <div>
+                                    <strong>Secure Booking</strong>
+                                    <p>Your information is encrypted and protected</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">💬</span>
+                                <div>
+                                    <strong>Expert Support</strong>
+                                    <p>Dedicated travel consultant for your trip</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">💯</span>
+                                <div>
+                                    <strong>Best Price Guarantee</strong>
+                                    <p>Find a lower price? We'll match it</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-icon">🏔️</span>
+                        <span class="logo-text">Himalaya<span class="logo-accent">Trips</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Premium Nepal travel and trekking agency. Creating unforgettable Himalayan
+                        experiences since 2010.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#destinations">Everest Base Camp</a></li>
+                        <li><a href="#destinations">Pokhara</a></li>
+                        <li><a href="#destinations">Chitwan</a></li>
+                        <li><a href="#destinations">Annapurna</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>📍 Thamel, Kathmandu, Nepal</li>
+                        <li>📞 +977 1-4XXXXXX</li>
+                        <li>✉️ info@himalayatrips.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HimalayaTrips. All rights reserved. | Crafted with ❤️ in Nepal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="js/supabase-config.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
