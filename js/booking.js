@@ -9,12 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
     feedback.style.display = 'none';
 
     const formData = {
-      full_name: document.getElementById('fullName').value.trim(),
-      email: document.getElementById('email').value.trim(),
-      phone: document.getElementById('phone').value.trim(),
-      destination: document.getElementById('destination').value,
-      travel_date: document.getElementById('travelDate').value,
-      message: document.getElementById('message').value.trim()
+  full_name: document.getElementById('fullName').value.trim(),
+  email: document.getElementById('email').value.trim(),
+  phone: document.getElementById('phone').value.trim(),
+  destination: document.getElementById('destination').value,
+  travel_date: document.getElementById('travelDate').value,
+  message: document.getElementById('message').value.trim()
+};
     };
 
     try {
