@@ -9,13 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     feedback.style.display = 'none';
 
     const formData = {
-  full_name: document.getElementById('fullName').value.trim(),
-  email: document.getElementById('email').value.trim(),
-  phone: document.getElementById('phone').value.trim(),
-  destination: document.getElementById('destination').value,
-  travel_date: document.getElementById('travelDate').value,
-  message: document.getElementById('message').value.trim()
-};
+      full_name: document.getElementById('fullName').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      phone: document.getElementById('phone').value.trim(),
+      destination: document.getElementById('destination').value,
+      travel_date: document.getElementById('travelDate').value,
+      message: document.getElementById('message').value.trim()
     };
 
     try {
@@ -47,46 +46,4 @@ document.addEventListener('DOMContentLoaded', () => {
       feedback.style.display = 'block';
     }
   });
-});        }
-
-        setLoading(true);
-
-        const formData = {
-            full_name: document.getElementById('fullName').value.trim(),
-            email: document.getElementById('email').value.trim(),
-            phone: document.getElementById('phone').value.trim(),
-            destination: document.getElementById('destination').value,
-            travel_date: document.getElementById('travelDate').value,
-            message: document.getElementById('message').value.trim(),
-            created_at: new Date().toISOString()
-        };
-
-        try {
-            const response = await fetch(`${SUPABASE_URL}/rest/v1/bookings`, {
-                method: 'POST',
-                headers: {
-                    'apikey': SUPABASE_ANON_KEY,
-                    'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-                    'Content-Type': 'application/json',
-                    'Prefer': 'return=minimal'
-                },
-                body: JSON.stringify(formData)
-            });
-
-            if (response.ok) {
-                showFeedback('Booking request sent successfully! We will contact you within 24 hours.', 'success');
-                form.reset();
-                clearErrors();
-            } else {
-                const errorText = await response.text();
-                console.error('Supabase error:', errorText);
-                showFeedback('Failed to submit booking. Please try again later.', 'error');
-            }
-        } catch (error) {
-            console.error('Network error:', error);
-            showFeedback('Network error. Please check your connection and try again.', 'error');
-        } finally {
-            setLoading(false);
-        }
-    });
 });
